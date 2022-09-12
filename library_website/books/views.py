@@ -1,3 +1,8 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 
-# Create your views here.
+from .models import Book
+
+
+def index(request):
+    return HttpResponse("You're at the index.")
